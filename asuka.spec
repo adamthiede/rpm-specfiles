@@ -4,7 +4,7 @@ Version: 0.8.1
 Release: 1%{?dist}
 License: MIT
 URL: https://git.sr.ht/~julienxx/asuka
-Source: %{URL}/archive/%{version}.tar.gz
+Source: https://git.sr.ht/~julienxx/asuka/archive/%{version}.tar.gz
 
 BuildRequires: rust
 BuildRequires: make
