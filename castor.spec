@@ -4,7 +4,7 @@ Version: 0.8.16
 Release: 1%{?dist}
 License: MIT
 URL: https://git.sr.ht/~julienxx/castor
-Source: %{url}/archive/%{version}.tar.gz
+Source: %{URL}/archive/%{version}.tar.gz
 
 BuildRequires: gcc
 BuildRequires: rust
