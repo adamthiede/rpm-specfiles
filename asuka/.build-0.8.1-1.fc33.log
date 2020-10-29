@@ -1,0 +1,247 @@
+
+setting SOURCE_DATE_EPOCH=1603584000
+warning: Could not canonicalize hostname: toolbox
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.vxiuxe
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ rm -rf asuka-0.8.1
++ /usr/bin/gzip -dc /home/adam/Documents/git/rpm-specfiles/asuka/0.8.1.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd asuka-0.8.1
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Gfcnmi
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ cd asuka-0.8.1
++ cargo build --release
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded ident_case v1.0.1
+  Downloaded darling_macro v0.10.2
+  Downloaded cc v1.0.57
+  Downloaded signal-hook v0.1.16
+  Downloaded tinyvec v0.3.3
+  Downloaded textwrap v0.12.1
+  Downloaded darling_core v0.10.2
+  Downloaded serde v1.0.114
+  Downloaded enum-map v0.6.2
+  Downloaded darling v0.10.2
+  Downloaded chrono v0.4.13
+  Downloaded xi-unicode v0.2.1
+  Downloaded syn v1.0.33
+  Downloaded open v1.4.0
+  Downloaded pkg-config v0.3.17
+  Downloaded term_size v0.3.2
+  Downloaded time v0.1.43
+  Downloaded num-rational v0.2.4
+  Downloaded ppv-lite86 v0.2.8
+  Downloaded strsim v0.9.3
+  Downloaded proc-macro2 v1.0.18
+  Downloaded owning_ref v0.4.1
+  Downloaded num-complex v0.2.4
+  Downloaded cfg-if v0.1.10
+  Downloaded signal-hook-registry v1.2.0
+  Downloaded autocfg v1.0.0
+  Downloaded aho-corasick v0.7.13
+  Downloaded crossbeam-utils v0.6.6
+  Downloaded bitflags v1.2.1
+  Downloaded array-macro v1.0.5
+  Downloaded arc-swap v0.4.7
+  Downloaded toml v0.5.6
+  Downloaded getrandom v0.1.14
+  Downloaded ncurses v5.99.0
+  Downloaded memchr v2.3.3
+  Downloaded percent-encoding v2.1.0
+  Downloaded maplit v1.0.2
+  Downloaded log v0.4.8
+  Downloaded enumset v0.4.5
+  Downloaded openssl-probe v0.1.2
+  Downloaded matches v0.1.8
+  Downloaded num-iter v0.1.41
+  Downloaded num-traits v0.2.12
+  Downloaded openssl-sys v0.9.58
+  Downloaded quote v1.0.7
+  Downloaded stable_deref_trait v1.1.1
+  Downloaded enumset_derive v0.4.4
+  Downloaded num-integer v0.1.43
+  Downloaded native-tls v0.2.4
+  Downloaded unicode-width v0.1.8
+  Downloaded json v0.12.4
+  Downloaded thread_local v1.0.1
+  Downloaded remove_dir_all v0.5.3
+  Downloaded lazy_static v1.4.0
+  Downloaded unicode-bidi v0.3.4
+  Downloaded foreign-types v0.3.2
+  Downloaded foreign-types-shared v0.1.1
+  Downloaded unicode-xid v0.2.1
+  Downloaded fnv v1.0.7
+  Downloaded tempfile v3.1.0
+  Downloaded crossbeam-channel v0.3.9
+  Downloaded url v2.1.1
+  Downloaded unicode-normalization v0.1.13
+  Downloaded hashbrown v0.5.0
+  Downloaded dirs v3.0.1
+  Downloaded rand_chacha v0.2.2
+  Downloaded rand_core v0.5.1
+  Downloaded num v0.2.1
+  Downloaded dirs-sys v0.3.5
+  Downloaded rand v0.7.3
+  Downloaded unicode-segmentation v1.6.0
+  Downloaded openssl v0.10.30
+  Downloaded idna v0.2.0
+  Downloaded regex-syntax v0.6.18
+  Downloaded regex v1.3.9
+  Downloaded cursive v0.13.0
+  Downloaded libc v0.2.71
+  Downloaded enum-map-derive v0.4.3
+   Compiling autocfg v1.0.0
+   Compiling libc v0.2.71
+   Compiling proc-macro2 v1.0.18
+   Compiling pkg-config v0.3.17
+   Compiling cc v1.0.57
+   Compiling cfg-if v0.1.10
+   Compiling unicode-xid v0.2.1
+   Compiling syn v1.0.33
+   Compiling lazy_static v1.4.0
+   Compiling getrandom v0.1.14
+   Compiling ident_case v1.0.1
+   Compiling fnv v1.0.7
+   Compiling strsim v0.9.3
+   Compiling log v0.4.8
+   Compiling memchr v2.3.3
+   Compiling serde v1.0.114
+   Compiling bitflags v1.2.1
+   Compiling tinyvec v0.3.3
+   Compiling openssl v0.10.30
+   Compiling matches v0.1.8
+   Compiling foreign-types-shared v0.1.1
+   Compiling arc-swap v0.4.7
+   Compiling ppv-lite86 v0.2.8
+   Compiling native-tls v0.2.4
+   Compiling stable_deref_trait v1.1.1
+   Compiling array-macro v1.0.5
+   Compiling unicode-width v0.1.8
+   Compiling hashbrown v0.5.0
+   Compiling percent-encoding v2.1.0
+   Compiling unicode-segmentation v1.6.0
+   Compiling maplit v1.0.2
+   Compiling openssl-probe v0.1.2
+   Compiling regex-syntax v0.6.18
+   Compiling xi-unicode v0.2.1
+   Compiling remove_dir_all v0.5.3
+   Compiling open v1.4.0
+   Compiling json v0.12.4
+   Compiling crossbeam-utils v0.6.6
+   Compiling thread_local v1.0.1
+   Compiling num-traits v0.2.12
+   Compiling num-integer v0.1.43
+   Compiling num-complex v0.2.4
+   Compiling num-rational v0.2.4
+   Compiling num-iter v0.1.41
+   Compiling unicode-bidi v0.3.4
+   Compiling foreign-types v0.3.2
+   Compiling owning_ref v0.4.1
+   Compiling textwrap v0.12.1
+   Compiling unicode-normalization v0.1.13
+   Compiling crossbeam-channel v0.3.9
+   Compiling openssl-sys v0.9.58
+   Compiling ncurses v5.99.0
+   Compiling quote v1.0.7
+   Compiling time v0.1.43
+   Compiling signal-hook-registry v1.2.0
+   Compiling term_size v0.3.2
+   Compiling dirs-sys v0.3.5
+   Compiling idna v0.2.0
+   Compiling aho-corasick v0.7.13
+   Compiling rand_core v0.5.1
+   Compiling signal-hook v0.1.16
+   Compiling dirs v3.0.1
+   Compiling url v2.1.1
+   Compiling rand_chacha v0.2.2
+   Compiling regex v1.3.9
+   Compiling chrono v0.4.13
+   Compiling rand v0.7.3
+   Compiling toml v0.5.6
+   Compiling num v0.2.1
+   Compiling darling_core v0.10.2
+   Compiling tempfile v3.1.0
+   Compiling darling_macro v0.10.2
+   Compiling enum-map-derive v0.4.3
+   Compiling darling v0.10.2
+   Compiling enumset_derive v0.4.4
+   Compiling enum-map v0.6.2
+   Compiling enumset v0.4.5
+   Compiling cursive v0.13.0
+   Compiling asuka v0.8.0 (/home/adam/Documents/git/rpm-specfiles/asuka/asuka-0.8.1)
+    Finished release [optimized] target(s) in 1m 11s
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.qpkxme
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ '[' /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64 '!=' / ']'
++ rm -rf /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64
+++ dirname /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64
++ mkdir -p /home/adam/rpmbuild/BUILDROOT
++ mkdir /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64
++ cd asuka-0.8.1
++ mkdir -p /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64//usr/bin
++ install -D target/release/asuka /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64//usr/bin/asuka
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Processing files: asuka-0.8.1-1.fc33.x86_64
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.ZmCyBf
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ cd asuka-0.8.1
++ DOCDIR=/home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/doc/asuka
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/doc/asuka
++ cp -pr README.md /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/doc/asuka
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.nQww8e
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ cd asuka-0.8.1
++ LICENSEDIR=/home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/licenses/asuka
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/licenses/asuka
++ cp -pr LICENSE /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64/usr/share/licenses/asuka
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: asuka = 0.8.1-1.fc33 asuka(x86-64) = 0.8.1-1.fc33
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.18)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.32)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.1.1()(64bit) libcrypto.so.1.1(OPENSSL_1_1_0)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libm.so.6()(64bit) libncursesw.so.6()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) libssl.so.1.1()(64bit) libssl.so.1.1(OPENSSL_1_1_0)(64bit) libtinfo.so.6()(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64
+Wrote: /home/adam/Documents/git/rpm-specfiles/asuka/asuka-0.8.1-1.fc33.src.rpm
+Wrote: /home/adam/Documents/git/rpm-specfiles/asuka/x86_64/asuka-0.8.1-1.fc33.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.fVXmif
++ umask 022
++ cd /home/adam/Documents/git/rpm-specfiles/asuka
++ cd asuka-0.8.1
++ /usr/bin/rm -rf /home/adam/rpmbuild/BUILDROOT/asuka-0.8.1-1.fc33.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
