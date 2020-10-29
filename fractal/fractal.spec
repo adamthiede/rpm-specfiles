@@ -51,9 +51,11 @@ PREFIX=%{buildroot}%{_prefix} ninja -C _build install
 %license LICENSE.txt
 %{_bindir}/fractal
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.Fractal.svg
+%{_datadir}/icons/hicolor/icon-theme.cache
 %{_datadir}/icons/hicolor/symbolic/apps/org.gnome.Fractal-symbolic.svg
 %{_datadir}/applications/org.gnome.Fractal.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Fractal.gschema.xml
+%{_datadir}/glib-2.0/schemas/gschemas.compiled
 %{_datadir}/locale/*/LC_MESSAGES/fractal.mo
 %{_datadir}/metainfo/org.gnome.Fractal.metainfo.xml
 
