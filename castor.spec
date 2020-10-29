@@ -36,7 +36,6 @@ mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/scalable/apps
 mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/{16x16,32x32,64x64,128x128}/apps
 sed -i -e 's/update-desktop-database//g' Makefile
 %make_install PREFIX=%{_prefix}
-#%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot}
 
 %files
 %{_bindir}/castor
