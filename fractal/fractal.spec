@@ -40,19 +40,22 @@ such as free software projects.
 %setup -q
 
 %build
-meson . _build --prefix=%{_prefix}
-ninja -C _build
+meson . _build --prefix=%{buildroot}%{_prefix}
+PREFIX=%{buildroot}%{_prefix} ninja -C _build
 
 %install
-ninja -C _build install
+PREFIX=%{buildroot}%{_prefix} ninja -C _build install 
 
 %files
-%{_bindir}/fractal
 %doc README.md
-%license LICENSE
-%{_datadir}/icons/hicolor/scalable/apps/fractal.svg
-%{_datadir}/icons/hicolor/*/apps/fractal.png
-%{_datadir}/applications/Fractal.desktop
+%license LICENSE.txt
+%{_bindir}/fractal
+%{_datadir}/icons/hicolor/scalable/apps/org.gnome.Fractal.svg
+%{_datadir}/icons/hicolor/symbolic/apps/org.gnome.Fractal-symbolic.svg
+%{_datadir}/applications/org.gnome.Fractal.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.Fractal.gschema.xml
+%{_datadir}/locale/*/LC_MESSAGES/fractal.mo
+%{_datadir}/metainfo/org.gnome.Fractal.metainfo.xml
 
 %changelog
 * Wed Oct 28 2020 Elagost <me@elagost.com>
