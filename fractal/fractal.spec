@@ -8,6 +8,7 @@ Source: https://gitlab.gnome.org/GNOME/fractal/-/archive/%{version}/fractal-%{ve
 
 BuildRequires: gcc
 BuildRequires: cmake
+BuildRequires: meson
 BuildRequires: rust
 BuildRequires: make
 BuildRequires: cargo
