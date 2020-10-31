@@ -1,6 +1,6 @@
 Name:           vimb
 Version:        3.6.0
-Release:        1
+Release:        1%{?dist}
 Summary:        The vim-like browser
 License:        GPL-3.0-or-later
 Group:          Productivity/Networking/Web/Browsers
