@@ -4,7 +4,7 @@ Version: 0.1.3
 Release: 1%{?dist}
 License: GPL
 URL: https://github.com/tomschwartz/neix
-Source: https://github.com/tomschwartz/neix/archive/v%{version}.tar.gz
+Source: https://github.com/tomschwarz/neix/archive/v%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: cmake
