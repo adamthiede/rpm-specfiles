@@ -1,0 +1,38 @@
+Summary: a RSS/Atom feed reader for your terminal.
+Name: neix
+Version: 0.1.3
+Release: 1%{?dist}
+License: GPL
+URL: https://github.com/tomschwartz/neix
+Source: https://github.com/tomschwartz/neix/archive/v%{version}.tar.gz
+
+BuildRequires: make
+BuildRequires: cmake
+BuildRequires: libcurl-devel
+BuildRequires: ncurses-devel
+
+Requires: ncurses-base
+
+%global debug_package %{nil}
+
+%description
+a RSS/Atom feed reader for your terminal.
+
+%prep
+%setup -q
+
+%build
+cmake .
+%make  PREFIX=%{_prefix} DESTDIR=%{buildroot}
+
+%install
+%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot}
+
+%files
+%{_bindir}/neix
+%doc README.md
+%license LICENSE.md
+
+%changelog
+* Sun Nov 1 2020 Elagost <me@elagost.com>
+- Created spec file
