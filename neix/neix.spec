@@ -6,6 +6,8 @@ License: GPL
 URL: https://github.com/tomschwartz/neix
 Source: https://github.com/tomschwarz/neix/archive/v%{version}.tar.gz
 
+BuildRequires: gcc
+BuildRequires: g++
 BuildRequires: make
 BuildRequires: cmake
 BuildRequires: libcurl-devel
