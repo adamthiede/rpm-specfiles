@@ -6,7 +6,7 @@ License:        Unlicense
 Group:          Networking
 URL:            https://github.com/paul-nameless/tg
 Source:         https://github.com/paul-nameless/tg/archive/v%{version}.tar.gz
-BuildRequires:  gtk3-devel, gcc, python, python3-pip
+BuildRequires:  python, python3-pip, python3-setuptools
 
 %global debug_package %{nil}
 
