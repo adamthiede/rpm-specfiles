@@ -24,11 +24,13 @@ a RSS/Atom feed reader for your terminal.
 %setup -q
 
 %build
-cmake .
-%make  PREFIX=%{_prefix} DESTDIR=%{buildroot}
+#cmake .
+%cmake
+#make PREFIX=%{_prefix} DESTDIR=%{buildroot}
 
 %install
-%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot}
+%cmake_install
+#make install PREFIX=%{_prefix} DESTDIR=%{buildroot} 
 
 %files
 %{_bindir}/neix
