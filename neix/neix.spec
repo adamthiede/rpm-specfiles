@@ -21,19 +21,19 @@ Requires: ncurses-base
 a RSS/Atom feed reader for your terminal.
 
 %prep
-%setup -q
+#%setup -q
+%cmake
 
 %build
-#cmake .
-%cmake
-#make PREFIX=%{_prefix} DESTDIR=%{buildroot}
+%make_build
 
 %install
-%cmake_install
-#make install PREFIX=%{_prefix} DESTDIR=%{buildroot} 
+%make_install
 
 %files
-%{_bindir}/neix
+%{_prefix}/local/bin/neix
+%{_prefix}/local/share/man/man1/neix.1
+%{_prefix}/local/share/neix/*
 %doc README.md
 %license LICENSE.md
 
