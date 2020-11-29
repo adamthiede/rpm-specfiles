@@ -21,13 +21,14 @@ Amfora aims to be the best looking Gemini client with the most features... all i
 %setup -q
 
 %build
-make %{?_smp_mflags} PREFIX=%{_prefix}
+%make_build %{?_smp_mflags} PREFIX=%{_prefix}
 
 %install
-%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot}
+%make_install PREFIX=%{buildroot}%{_prefix}
 
 %files
 %{_bindir}/amfora
+%{_datadir}/applications/amfora.desktop
 %doc README.md
 %license LICENSE
 
