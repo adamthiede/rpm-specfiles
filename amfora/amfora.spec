@@ -7,6 +7,7 @@ URL: https://github.com/makeworld-the-better-one/amfora
 Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.tar.gz
 
 BuildRequires: make
+BuildRequires: git
 BuildRequires: gcc
 BuildRequires: golang
 
