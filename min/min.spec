@@ -6,7 +6,8 @@ License: MIT
 URL: https://github.com/a-h/min
 Source: https://github.com/a-h/min/archive/v%{version}.tar.gz
 
-BuildRequires: go 
+BuildRequires: go
+BuildRequires: git
 BuildRequires: make
 
 Requires: ncurses-base
