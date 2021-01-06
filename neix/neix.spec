@@ -3,7 +3,7 @@ Name: neix
 Version: 0.1.3
 Release: 1%{?dist}
 License: GPL
-URL: https://github.com/tomschwartz/neix
+URL: https://github.com/tomschwarz/neix
 Source: https://github.com/tomschwarz/neix/archive/v%{version}.tar.gz
 
 BuildRequires: gcc
@@ -22,7 +22,7 @@ a RSS/Atom feed reader for your terminal.
 
 %prep
 #%setup -q
-%cmake
+cmake .
 
 %build
 %make_build
