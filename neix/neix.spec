@@ -21,10 +21,11 @@ Requires: ncurses-base
 a RSS/Atom feed reader for your terminal.
 
 %prep
-#%setup -q
-cmake .
+%setup -q
 
 %build
+#mkdir -p %{buildroot};cd %{buildroot};cmake .
+cmake .
 %make_build
 
 %install
