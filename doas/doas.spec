@@ -11,6 +11,7 @@ BuildRequires: gcc
 BuildRequires: bison
 BuildRequires: flex
 BuildRequires: pam-devel
+BuildRequires: byacc
 
 %global debug_package %{nil}
 
