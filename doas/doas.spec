@@ -29,6 +29,10 @@ make %{?_smp_mflags} PREFIX=%{_prefix}
 
 %files
 %{_bindir}/doas
+%{_bindir}/vidoas
+%{_datadir}/man/man1/doas.1.gz
+%{_datadir}/man/man5/doas.conf.5.gz
+%{_datadir}/man/man8/vidoas.8.gz
 %doc README.md
 %license LICENSE
 
