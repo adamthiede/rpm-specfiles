@@ -27,6 +27,11 @@ make %{?_smp_mflags} PREFIX=%{_prefix} MANDIR=%{buildroot}/%{_datadir}/man
 %install
 %make_install PREFIX=%{_prefix} DESTDIR=%{buildroot} MANDIR=%{buildroot}/%{_datadir}/man
 
+%post
+if [[ -f /etc/pam.d/sudo && ! -f /etc/pam.d/doas ]];then
+    cp /etc/pam.d/sudo /etc/pam.d/doas
+fi
+
 %files
 %{_bindir}/doas
 %{_bindir}/vidoas
