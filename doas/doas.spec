@@ -7,6 +7,10 @@ URL: https://github.com/slicer69/doas
 Source: https://github.com/slicer69/doas/archive/%{version}.tar.gz
 
 BuildRequires: make
+BuildRequires: gcc
+BuildRequires: bison
+BuildRequires: flex
+BuildRequires: pam-devel
 
 %global debug_package %{nil}
 
