@@ -22,10 +22,10 @@ A port of OpenBSD's doas which runs on FreeBSD, Linux, NetBSD, illumos and macOS
 %setup -q
 
 %build
-make %{?_smp_mflags} PREFIX=%{_prefix}
+make %{?_smp_mflags} PREFIX=%{_prefix} MANDIR=%{_datadir}/man
 
 %install
-%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot}
+%make_install PREFIX=%{_prefix} DESTDIR=%{buildroot} MANDIR=%{_datadir}/man
 
 %files
 %{_bindir}/doas
