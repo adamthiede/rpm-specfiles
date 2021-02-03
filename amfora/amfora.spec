@@ -25,6 +25,9 @@ Amfora aims to be the best looking Gemini client with the most features... all i
 %make_build %{?_smp_mflags} PREFIX=%{_prefix}
 
 %install
+mkdir -p %{buildroot}%{_prefix}
+mkdir -p %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{_datadir}
 %make_install PREFIX=%{buildroot}%{_prefix}
 
 %files
