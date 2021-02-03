@@ -1,6 +1,6 @@
 Summary: a Gemini browser for your terminal
 Name: amfora
-Version: 1.6.0
+Version: 1.7.2
 Release: 1%{?dist}
 License: GPL
 URL: https://github.com/makeworld-the-better-one/amfora
