@@ -1,6 +1,6 @@
 Name:           tarsnap
 Version:        1.0.39
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Secure, efficient online backup service
 
 License:        Proprietary
