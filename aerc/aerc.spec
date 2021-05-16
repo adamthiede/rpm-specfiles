@@ -15,11 +15,13 @@ BuildRequires:  golang
 aerc is an email client that runs in your terminal. It's highly efficient and extensible, perfect for the discerning hacker.
 
 %build
-make
+cd %{buildroot} && make DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
+
 #%make_build DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
 
 %install
-make install
+cd %{buildroot} && make install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
+
 #%make_install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
 
 %files
