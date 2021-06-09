@@ -16,11 +16,12 @@ BuildRequires:  gtk-layer-shell-devel
 SFWBar (Sway Floating Window Bar) is a flexible taskbar application for Sway wayland compositor, designed with a stacking layout in mind.
 
 %build
-meson build
-ninja -C build
+%meson_build
+%ninja_build
 
 %install
-DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} ninja -C build install
+#DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} %ninja_install
+%ninja_install
 
 %files
 %{_bindir}/*
@@ -30,5 +31,5 @@ DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} nin
 
 
 %changelog
-* Tue June 08 2021 Adam Thiede <me@adamthiede.com> 0.9.8-1
+* Tue Jun 08 2021 Adam Thiede <me@adamthiede.com> 0.9.8-1
 - Initial specfile
