@@ -28,7 +28,6 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 #DESTDIR=%{buildroot}%{_prefix} PREFIX=%{buildroot}%{_prefix} %meson_configure
 #DESTDIR=%{buildroot}%{_prefix} PREFIX=%{buildroot}%{_prefix} %meson_build
 #DESTDIR=%{buildroot}%{_prefix} PREFIX=%{buildroot}%{_prefix} %ninja_build
-%meson_configure
 %meson_build
 %ninja_build
 
