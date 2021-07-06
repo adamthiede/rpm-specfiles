@@ -65,5 +65,5 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
-* Mon Jul 06 2021 Adam Thiede <me@adamthiede.com> - 3.39.92-1
+* Mon Jul 05 2021 Adam Thiede <me@adamthiede.com> - 3.39.92-1
 - Initial 
