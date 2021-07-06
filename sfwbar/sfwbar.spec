@@ -10,6 +10,7 @@ BuildRequires:  make
 BuildRequires:  meson
 BuildRequires:  gtk3-devel 
 BuildRequires:  libucl-devel
+BuildRequires:  fedora-rpm-macros
 BuildRequires:  gtk-layer-shell-devel
 
 %global debug_package %{nil}
@@ -21,6 +22,7 @@ SFWBar (Sway Floating Window Bar) is a flexible taskbar application for Sway way
 %setup -q
 
 %build
+mkdir -p %{buildroot}/x86_64-redhat-linux-gnu
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/applications/
