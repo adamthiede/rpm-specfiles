@@ -10,6 +10,7 @@ URL:            https://gitlab.gnome.org/GNOME/gnome-text-editor
 Source0:        %{url}/-/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  gcc
 BuildRequires:  desktop-file-utils
 BuildRequires:  meson
 BuildRequires:  libhandy-devel
@@ -31,6 +32,7 @@ BuildRequires:  pkgconfig(pango)
 BuildRequires:  pkgconfig(pangocairo)
 
 Requires:       hicolor-icon-theme
+Requires:       gtk3
 
 %description
 A simple text editor
