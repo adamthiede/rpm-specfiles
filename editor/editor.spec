@@ -15,6 +15,7 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  meson
 BuildRequires:  libhandy-devel
 BuildRequires:  pkgconfig(atk)
+BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(dbus-1)
 BuildRequires:  pkgconfig(gdk-3.0)
@@ -33,6 +34,7 @@ BuildRequires:  pkgconfig(pangocairo)
 
 Requires:       hicolor-icon-theme
 Requires:       gtk3
+Requires:       gtk4
 
 %description
 A simple text editor
