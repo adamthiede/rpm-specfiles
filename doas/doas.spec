@@ -1,6 +1,6 @@
 Summary: A port of OpenBSD's doas to Linux
 Name: doas
-Version: 6.3p4
+Version: 6.3p5
 Release: 1%{?dist}
 License: BSD
 URL: https://github.com/slicer69/doas
