@@ -56,6 +56,7 @@ appstream-util validate --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 %{_metainfodir}/*
 %{_datadir}/warpinator/
 %{_libexecdir}/warpinator/*.py
+%{_libexecdir}/warpinator/zeroconf_/*
 %{_sysconfdir}/xdg/autostart/*
 
 
