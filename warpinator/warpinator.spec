@@ -40,9 +40,9 @@ on a local area network and share files quickly and securely.
 
 %install
 %meson_install
-desktop-file-validate %{buildroot}%{_datadir}/applications/warpinator.desktop
-desktop-file-validate %{buildroot}%{_sysconfdir}/xdg/autostart/warpinator-autostart.desktop
-appstream-util validate --nonet %{buildroot}%{_metainfodir}/warpinator.appdata.xml
+desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
+desktop-file-validate %{buildroot}%{_sysconfdir}/xdg/autostart/*.desktop
+appstream-util validate --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 
 %find_lang %{name}
 
