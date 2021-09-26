@@ -52,11 +52,11 @@ appstream-util validate --nonet %{buildroot}%{_metainfodir}/warpinator.appdata.x
 %{_bindir}/warpinator
 %{_datadir}/icons/hicolor/*/apps/*Warpinator*
 %{_datadir}/glib-2.0/schemas/org.x.Warpinator.gschema.xml
-%{_datadir}/applications/warpinator.desktop
+%{_datadir}/applications/*Warpinator*.desktop
 %{_metainfodir}/warpinator.appdata.xml
 %{_datadir}/warpinator/
 %{_libexecdir}/warpinator/*.py
-%{_sysconfdir}/xdg/autostart/warpinator-autostart.desktop
+%{_sysconfdir}/xdg/autostart/*Warpinator*
 
 
 %changelog
