@@ -1,5 +1,5 @@
 Name:           sfwbar
-Version:        0.9.8
+Version:        0.9.10.1
 Release:        1%{?dist}
 Summary:        Sway Floating Window Bar
 License:        GPL-3.0
