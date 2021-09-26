@@ -1,8 +1,8 @@
 Summary: Send and Receive Files across the Network
 Name: warpinator
-Version: 1.0.8
-Release: 4%{?dist}
-License: GPLv2+
+Version: 1.2.4
+Release: 0%{?dist}
+License: GPL
 URL: https://github.com/linuxmint/warpinator
 Source: %url/archive/%{version}/%{name}-%{version}.tar.gz
 
@@ -60,5 +60,8 @@ appstream-util validate --nonet %{buildroot}%{_metainfodir}/warpinator.appdata.x
 
 
 %changelog
+* Sat Sep 25 2021 Adam Thiede <adamj@mailbox.org>
+- Created spec file
+
 * Mon Sep 07 2020 Elagost <me@elagost.com>
 - Created spec file
