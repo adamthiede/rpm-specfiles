@@ -7,6 +7,7 @@ URL:            https://github.com/LBCrion/sfwbar
 Source0:        https://github.com/LBCrion/sfwbar/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  make
+BuildRequires:  gcc
 BuildRequires:  meson
 BuildRequires:  gtk3-devel 
 BuildRequires:  libucl-devel
