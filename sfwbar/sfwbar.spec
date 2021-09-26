@@ -22,14 +22,17 @@ SFWBar (Sway Floating Window Bar) is a flexible taskbar application for Sway way
 %prep
 %setup -q
 
-meson build
-ninja -C build
+PREFIX=%{_prefix} meson build
+PREFIX=%{_prefix} ninja -C build
 PREFIX=%{_prefix} DESTDIR=%{buildroot} ninja -C build install
+mv %{buildroot}/usr/local/* %{buildroot}/usr/
 
 %files
 %{_bindir}/*
 %{_mandir}/man*/*
-%{_datadir}/*
+%{_datadir}/sfwbar/*
+%{_datadir}/sfwbar/*/*
+%{_datadir}/sfwbar/*/*/*
 %license LICENSE
 
 
