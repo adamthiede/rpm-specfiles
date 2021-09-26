@@ -50,13 +50,13 @@ appstream-util validate --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 %doc README.md
 %license  COPYING
 %{_bindir}/warpinator
-%{_datadir}/icons/hicolor/*/apps/*Warpinator*
+%{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/glib-2.0/schemas/org.x.Warpinator.gschema.xml
-%{_datadir}/applications/*Warpinator*.desktop
-%{_metainfodir}/warpinator.appdata.xml
+%{_datadir}/applications/*.desktop
+%{_metainfodir}/*
 %{_datadir}/warpinator/
 %{_libexecdir}/warpinator/*.py
-%{_sysconfdir}/xdg/autostart/*Warpinator*
+%{_sysconfdir}/xdg/autostart/*
 
 
 %changelog
