@@ -21,10 +21,6 @@ C++ version and continuation of bashtop and bpytop.
 %prep
 %setup -q
 
-%build
-%make_build %{?_smp_mflags} PREFIX=%{_prefix}
-
-%install
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
 %make_install PREFIX=%{buildroot}%{_prefix}
