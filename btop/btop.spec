@@ -21,12 +21,15 @@ C++ version and continuation of bashtop and bpytop.
 %prep
 %setup -q
 
+%make_build %{?_smp_mflags} PREFIX=%{_prefix}
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
-%make_install PREFIX=%{buildroot}%{_prefix}
+%make_install PREFIX=%{_prefix}
 
 %files
 %{_bindir}/btop
+%{_datadir}/btop/*
+%{_datadir}/btop/*/*
 %doc README.md
 %license LICENSE
 
