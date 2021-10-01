@@ -8,7 +8,7 @@ Source: %{url}/archive/v%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: git
-BuildRequires: g++
+BuildRequires: gcc-c++
 
 Requires: ncurses-base
 
