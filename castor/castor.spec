@@ -1,6 +1,6 @@
 Summary: A graphical client for plain-text protocols
 Name: castor
-Version: 0.8.16
+Version: 0.8.18
 Release: 1%{?dist}
 License: MIT
 URL: https://git.sr.ht/~julienxx/castor
