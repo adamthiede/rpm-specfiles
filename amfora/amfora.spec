@@ -12,9 +12,9 @@ BuildRequires: gcc
 # suse package: go
 # fedora/rhel package: golang
 %if 0%{?suse_version}
-    BuildRequires: go
+BuildRequires: go
 %else
-    BuildRequires: golang
+BuildRequires: golang
 %endif
 
 Requires: ncurses-base
