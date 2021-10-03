@@ -9,7 +9,11 @@ Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.t
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
-BuildRequires: pkgconfig(go)
+%if %{definded suse_version}
+    BuildRequires: go
+%else
+    BuildRequires: golang
+%endif
 
 Requires: ncurses-base
 
