@@ -13,7 +13,11 @@ BuildRequires: gcc
 # fedora/rhel package: golang
 %if 0%{?suse_version}
 BuildRequires: go
-%else
+%endif
+%if 0%{?fedora}
+BuildRequires: golang
+%endif
+%if 0%{?rhel}
 BuildRequires: golang
 %endif
 
