@@ -9,7 +9,7 @@ Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.t
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
-BuildRequires: golang
+BuildRequires: pkgconfig(go)
 
 Requires: ncurses-base
 
@@ -37,5 +37,8 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 %license LICENSE
 
 %changelog
-* Sun Nov 29 2020 Elagost <me@elagost.com>
+* Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org>
+- Updated version and cleaned spec file for upload
+
+* Sun Nov 29 2020 Adam Thiede <adamj@mailbox.org>
 - Created spec file
