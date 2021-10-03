@@ -2,7 +2,7 @@ Summary: a Gemini browser for your terminal
 Name: amfora
 Version: 1.8.0
 Release: 1%{?dist}
-License: GPL
+License: GPLv3
 URL: https://github.com/makeworld-the-better-one/amfora
 Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.tar.gz
 
@@ -26,7 +26,8 @@ Requires: ncurses-base
 %global debug_package %{nil}
 
 %description
-Amfora aims to be the best looking Gemini client with the most features... all in the terminal.
+Amfora aims to be the best looking Gemini client with the most features...
+all in the terminal.
 
 %prep
 %setup -q
