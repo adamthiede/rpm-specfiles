@@ -9,7 +9,9 @@ Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.t
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
-%if %{definded suse_version}
+# suse package: go
+# fedora/rhel package: golang
+%if 0%{?suse_version}
     BuildRequires: go
 %else
     BuildRequires: golang
