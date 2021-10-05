@@ -21,7 +21,7 @@ all in the terminal.
 %setup -q
 
 %build
-%make_build %{?_smp_mflags} BUILDER="official-rpm" PREFIX=%{_prefix}
+%make_build %{?_smp_mflags} -ldflags=-linkmode=external BUILDER="official-rpm" PREFIX=%{_prefix}
 
 %install
 mkdir -p %{buildroot}%{_prefix}
