@@ -34,5 +34,8 @@ mkdir -p %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
-* Fri Oct 01 2021 Adam Thiede <adamj@mailbox.org>
+* Mon Oct 04 2021 Adam Thiede <adamj@mailbox.org> 1.0.13
+- Update btop version to 1.0.13
+
+* Fri Oct 01 2021 Adam Thiede <adamj@mailbox.org> 1.0.12
 - Created spec file
