@@ -32,17 +32,14 @@ Automate your infrastructure
 %setup -q
 
 %build
-%make_build %{?_smp_mflags} PREFIX=%{_prefix}
+%make_build PREFIX=%{_prefix}
 
 %install
-mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{_datadir}/applications/
-%make_install PREFIX=%{buildroot}%{_prefix}
+%gobuild -o %{gobuilddir}/bin/terraform %{goipath}
 
 %files
 %{_bindir}/terraform
-#%{_datadir}/applications/amfora.desktop
 %doc README.md
 %license LICENSE
 
