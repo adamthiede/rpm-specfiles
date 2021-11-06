@@ -36,7 +36,8 @@ Automate your infrastructure
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-%gobuild -o %{gobuilddir}/bin/terraform %{goipath}
+go build
+cp terraform %{buildroot}%{_bindir}
 
 %files
 %{_bindir}/terraform
