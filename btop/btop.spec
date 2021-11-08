@@ -1,6 +1,6 @@
 Summary: Resource Monitor (based on bashtop/bpytop)
 Name: btop
-Version: 1.0.22
+Version: 1.0.23
 Release: 1%{?dist}
 License: GPL
 URL: https://github.com/aristocratos/btop/
@@ -34,6 +34,9 @@ mkdir -p %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
+* Mon Nov 08 2021 Adam Thiede <adamj@mailbox.org> 1.0.23
+- Update btop version to 1.0.23
+
 * Mon Oct 04 2021 Adam Thiede <adamj@mailbox.org> 1.0.13
 - Update btop version to 1.0.13
 
