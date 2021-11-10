@@ -4,7 +4,7 @@ Version: 0.96.7
 Release: 1%{?dist}
 License: BSD
 URL: https://github.com/clangen/musikcube
-Source: %{url}/archive/v%{version}.tar.gz
+Source: %{url}/archive/%{version}.tar.gz
 
 BuildRequires: make gcc-c++ cmake boost-devel libogg-devel libvorbis-devel ffmpeg-devel ncurses-devel zlib-devel alsa-lib-devel pulseaudio-libs-devel libcurl-devel libmicrohttpd-devel lame-devel libev-devel taglib-devel openssl-devel libopenmpt-deve
 
