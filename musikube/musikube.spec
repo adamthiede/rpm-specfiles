@@ -10,8 +10,6 @@ BuildRequires: make gcc-c++ cmake boost-devel libogg-devel libvorbis-devel ffmpe
 
 Requires: ncurses-base ffmpeg
 
-#%global debug_package %{nil}
-
 %description
 a cross-platform, terminal-based audio engine, library, player and server written in c++.
 
