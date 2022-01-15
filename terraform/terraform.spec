@@ -45,5 +45,7 @@ cp terraform %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
+* Sat Jan 15 2022 Adam Thiede <adamj@mailbox.org> 1.1.3
+- v1.1.3
 * Sat Nov 6 2021 Adam Thiede <adamj@mailbox.org> 1.0.10
 - Initial 
