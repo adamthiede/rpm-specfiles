@@ -1,6 +1,6 @@
 Summary: terraform
 Name: terraform
-Version: 1.0.10
+Version: 1.1.3
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/hashicorp/terraform
