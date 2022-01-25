@@ -2,7 +2,7 @@ Summary: Automatically suspend inactive X11 applications
 Name: xsuspender
 Version: 1.3
 Release: 1%{?dist}
-License: GPL
+License: WTFPL
 URL: https://github.com/kernc/xsuspender
 Source: https://github.com/kernc/xsuspender/archive/refs/tags/%{version}.tar.gz
 
