@@ -36,6 +36,9 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 %doc README.md
 %license LICENSE
 %{_bindir}/xsuspender
+%{_datadir}/man/*/*xsuspender*
+%{_datadir}/doc/xsuspender/examples/xsuspender.conf
+${_prefix}/etc/xdg/autostart/xsuspender.desktop
 
 %changelog
 * Mon Jan 24 2022 Elagost <me@elagost.com>
