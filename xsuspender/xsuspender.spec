@@ -13,6 +13,7 @@ BuildRequires:  pkg-config
 BuildRequires:  procps-ng
 BuildRequires:  glib2-devel
 BuildRequires:  libwnck-devel
+BuildRequires:  libwnck3-devel
 
 Requires: xorg-x11-server-Xorg
 Requires: desktop-file-utils
