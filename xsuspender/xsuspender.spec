@@ -26,8 +26,9 @@ Automatically suspend inactive X11 applications.
 %prep
 %setup -q
 
-%cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+cd build
 
+%cmake -DCMAKE_INSTALL_PREFIX=/usr/local
 %make_build
 %make_install
 
