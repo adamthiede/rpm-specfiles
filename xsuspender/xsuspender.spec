@@ -28,7 +28,7 @@ Automatically suspend inactive X11 applications.
 
 cd build
 
-cmake ..
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 %make_build
 %make_install
 
