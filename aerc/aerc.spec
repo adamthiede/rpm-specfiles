@@ -1,28 +1,36 @@
 Name:           aerc
-Version:        0.5.2
+Version:        0.8.2
 Release:        1%{?dist}
 Summary:        A pretty good email client
 
 License:        MIT
 URL:            https://aerc-mail.org/
-Source0:        https://git.sr.ht/~sircmpwn/aerc/archive/%{version}.tar.gz
+Source0:        https://git.sr.ht/~rjarry/aerc/archive/%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  scdoc
 BuildRequires:  golang
 
+%global debug_package %{nil}
+
 %description
 aerc is an email client that runs in your terminal. It's highly efficient and extensible, perfect for the discerning hacker.
 
-%build
-cd %{buildroot} && make DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
+%prep
+%setup -q
 
+%build
+echo "---MAKE START---"
+%make_build
+echo "---MAKE END---"
 #%make_build DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
 
 %install
-cd %{buildroot} && make install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
+echo "---INSTALL START---"
+%make_install
+#cd %{buildroot} && make install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
+echo "---INSTALL END---"
 
-#%make_install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix}
 
 %files
 %{_bindir}/*
@@ -32,5 +40,8 @@ cd %{buildroot} && make install DESTDIR=%{buildroot}%{_prefix} %{?_smp_mflags} P
 
 
 %changelog
+* Sun Mar 20 2022 Adam Thiede <me@adamthiede.com> 0.8.2-1
+- version update
+
 * Sun May 16 2021 Adam Thiede <me@adamthiede.com> 0.5.2-1
 - Initial specfile
