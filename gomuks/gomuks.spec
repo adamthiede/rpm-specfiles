@@ -9,6 +9,7 @@ Source: https://github.com/elagost/gomuks/archive/v%{version}.tar.gz
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
+BuildRequires: gcc-c++
 BuildRequires: libolm-devel
 # suse package: go
 # fedora/rhel package: golang
@@ -30,6 +31,7 @@ Requires: ncurses-base
 A terminal Matrix client written in Go using mautrix and mauview
 
 %prep
+%setup -q
 
 %build
 go build
