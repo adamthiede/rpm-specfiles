@@ -9,6 +9,7 @@ Source: https://github.com/elagost/gomuks/archive/v%{version}.tar.gz
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
+BuildRequires: libolm-devel
 # suse package: go
 # fedora/rhel package: golang
 %if 0%{?suse_version}
