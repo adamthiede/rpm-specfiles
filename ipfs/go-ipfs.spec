@@ -1,5 +1,5 @@
 Summary: ipfs client in go
-Name: ipfs
+Name: go-ipfs
 Version: 0.12.2
 Release: 1%{?dist}
 License: GPLv3
@@ -38,7 +38,7 @@ IPFS client in go
 %make_install PREFIX=%{_prefix}
 
 %files
-%{_bindir}/ipfs
+%{_bindir}/go-ipfs
 %doc README.md
 %license LICENSE
 
