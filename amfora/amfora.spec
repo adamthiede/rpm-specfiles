@@ -35,7 +35,7 @@ all in the terminal.
 %build
 %make_build %{?_smp_mflags} BUILDER="official-rpm" PREFIX=%{_prefix}
 
-%install
+#%install
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/applications/
