@@ -32,6 +32,7 @@ USENET-inspired, uncensorable, decentralized internet discussion system.}
 %setup -q
 
 %build
+sed -i go.mod -e 's/^go 1.17/^go 1.16/'
 go mod tidy
 go build
 
