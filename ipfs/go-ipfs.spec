@@ -1,6 +1,6 @@
-Summary: go-ipfs
-Name: ipfs client in go
-Version: 0.11.0
+Summary: ipfs client in go
+Name: go-ipfs
+Version: 0.12.2
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/ipfs/go-ipfs
@@ -32,19 +32,20 @@ IPFS client in go
 %setup -q
 
 %build
-%make_build PREFIX=%{_prefix}
+make build
 
 %install
-mkdir -p %{buildroot}%{_bindir}
-go build
-cp go-ipfs %{buildroot}%{_bindir}
+install -Dm755 cmd/ipfs/ipfs %{buildroot}/%{_bindir}/ipfs
 
 %files
-%{_bindir}/go-ipfs
+%{_bindir}/ipfs
 %doc README.md
 %license LICENSE
 
 %changelog
+* Wed Apr 13 2022 Adam Thiede <adamj@mailbox.org> 0.12.2
+- v0.12.2
+
 * Thu Jan 20 2022 Adam Thiede <adamj@mailbox.org> 0.11.0
 - v0.11.0
 - initial specfile

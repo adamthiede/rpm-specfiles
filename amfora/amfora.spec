@@ -1,6 +1,6 @@
 Summary: a Gemini browser for your terminal
 Name: amfora
-Version: 1.8.0
+Version: 1.9.2
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/makeworld-the-better-one/amfora
@@ -48,6 +48,9 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 %license LICENSE
 
 %changelog
+* Sun Mar 20 2022 Adam Thiede <adamj@mailbox.org> 1.9.2
+- Updated version
+
 * Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org> 1.8.0
 - Updated version and cleaned spec file for upload
 
