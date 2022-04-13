@@ -32,11 +32,10 @@ IPFS client in go
 %setup -q
 
 %build
-%make_build
+make build
 
 %install
-#install -Dm755 %{buildroot}/cmd/ipfs/ipfs %{_bindir}/ipfs
-%make_install
+install -Dm755 cmd/ipfs/ipfs %{buildroot}/%{_bindir}/ipfs
 
 %files
 %{_bindir}/ipfs
