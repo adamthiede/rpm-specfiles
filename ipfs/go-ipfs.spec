@@ -32,13 +32,14 @@ IPFS client in go
 %setup -q
 
 %build
-%make_build PREFIX=%{_prefix}
+%make_build
 
 %install
-%make_install PREFIX=%{_prefix}
+#install -Dm755 %{buildroot}/cmd/ipfs/ipfs %{_bindir}/ipfs
+%make_install
 
 %files
-%{_bindir}/go-ipfs
+%{_bindir}/ipfs
 %doc README.md
 %license LICENSE
 
