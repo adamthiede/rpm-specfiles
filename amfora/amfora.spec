@@ -39,7 +39,7 @@ all in the terminal.
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/applications/
-%make_install PREFIX=%{buildroot}%{_prefix}
+%make_install PREFIX=%{_prefix}
 
 %files
 %{_bindir}/amfora
