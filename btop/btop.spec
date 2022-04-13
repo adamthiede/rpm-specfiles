@@ -1,6 +1,6 @@
 Summary: Resource Monitor (based on bashtop/bpytop)
 Name: btop
-Version: 1.1.4
+Version: 1.2.6
 Release: 1%{?dist}
 License: GPL
 URL: https://github.com/aristocratos/btop/
