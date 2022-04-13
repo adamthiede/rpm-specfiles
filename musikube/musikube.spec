@@ -1,6 +1,6 @@
 Summary: a cross-platform, terminal-based audio engine
 Name: musikube
-Version: 0.96.7
+Version: 0.97.0
 Release: 1%{?dist}
 License: BSD
 URL: https://github.com/clangen/musikcube
