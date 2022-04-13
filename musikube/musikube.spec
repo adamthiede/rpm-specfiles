@@ -1,5 +1,5 @@
 Summary: a cross-platform, terminal-based audio engine
-Name: musikube
+Name: musikcube
 Version: 0.97.0
 Release: 1%{?dist}
 License: BSD
