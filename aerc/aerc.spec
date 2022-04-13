@@ -34,9 +34,8 @@ echo "---INSTALL END---"
 
 
 %files
-%{_bindir}/*
-%{_mandir}/man*/*
-%{_datadir}/*
+%{_prefix}/local/share/aerc
+%{_prefix}/local/bin/aerc
 %license LICENSE
 
 

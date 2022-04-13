@@ -32,7 +32,8 @@ USENET-inspired, uncensorable, decentralized internet discussion system.}
 %setup -q
 
 %build
-go build .
+go mod tidy
+go build
 
 %install
 install -Dm755 superhighway84 %{buildroot}%{_bindir}
