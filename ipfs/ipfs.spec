@@ -1,5 +1,5 @@
-Summary: go-ipfs
-Name: ipfs client in go
+Summary: ipfs client in go
+Name: ipfs
 Version: 0.12.2
 Release: 1%{?dist}
 License: GPLv3
