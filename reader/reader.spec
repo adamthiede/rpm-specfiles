@@ -32,6 +32,7 @@ reader is for your command line what the "readability" view is for modern browse
 %setup -q
 
 %build
+sed -i -e 's,go 1.17,go 1.16,' go.mod
 go mod tidy
 go build
 
