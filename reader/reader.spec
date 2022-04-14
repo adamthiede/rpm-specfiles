@@ -1,5 +1,5 @@
 Summary: better readability of web pages on the CLI.
-Name: readability
+Name: reader
 Version: 0.1.3
 Release: 1%{?dist}
 License: GPLv3
@@ -44,5 +44,5 @@ install -Dm755 %{name} %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
-* Tue Apr 13 2022 Adam Thiede <adamj@mailbox.org> 0.1.3
+* Wed Apr 13 2022 Adam Thiede <adamj@mailbox.org> 0.1.3
 - genesis
