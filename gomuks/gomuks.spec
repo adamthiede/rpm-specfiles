@@ -1,10 +1,10 @@
 Summary: A terminal based Matrix client written in Go
 Name: gomuks
-Version: 0.2.5
-Release: 1%{?dist}
-License: AGPLv3 and MPLv2.0
-URL: https://github.com/elagost/gomuks
-Source: https://github.com/elagost/gomuks/archive/v%{version}.tar.gz
+Version: master
+Release: 2%{?dist}
+License: AGPLv3
+URL: https://github.com/tuli/gomuks
+Source: https://github.com/tulir/gomuks/archive/master.tar.gz
 
 BuildRequires: make
 BuildRequires: git
@@ -34,13 +34,12 @@ A terminal Matrix client written in Go using mautrix and mauview
 %setup -q
 
 %build
+sed -i go.mod -e 's/^go 1.17/go 1.16/'
+go mod tidy
 go build
 
 %install
-mkdir -p %{buildroot}%{_prefix}
-mkdir -p %{buildroot}%{_bindir}
-install -Dm755 gomuks "%{buildroot}%{_bindir}/gomuks"
-install -Dm644 README.md "%{buildroot}%{_docdir}%{name}/README.md"
+install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/gomuks
