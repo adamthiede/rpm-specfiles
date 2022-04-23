@@ -33,8 +33,8 @@ Automate your infrastructure
 
 %build
 sed -i -e 's,go 1.17,go 1.16,' go.mod
-sed -i -e 's,go-tfe v0.19.1-.*$,go-tfe v0.22.0,' go.mod
-go mod download github.com/hashicorp/go-tfe
+#sed -i -e 's,go-tfe v0.19.1-.*$,go-tfe v0.22.0,' go.mod
+#go mod download github.com/hashicorp/go-tfe
 %make_build PREFIX=%{_prefix}
 
 %install
@@ -50,7 +50,7 @@ cp terraform %{buildroot}%{_bindir}
 %changelog
 * Fri Apr 22 2022 Adam Thiede <adamj@mailbox.org> 1.1.9
 - v1.1.9
-* Wed Apr 3 2022 Adam Thiede <adamj@mailbox.org> 1.1.8
+* Sun Apr 3 2022 Adam Thiede <adamj@mailbox.org> 1.1.8
 - v1.1.8
 * Wed Jan 19 2022 Adam Thiede <adamj@mailbox.org> 1.1.4
 - v1.1.4
