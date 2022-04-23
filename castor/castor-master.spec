@@ -1,10 +1,10 @@
 Summary: A graphical client for plain-text protocols
 Name: castor
-Version: master
+Version: 9999
 Release: 1%{?dist}
 License: MIT
 URL: https://git.sr.ht/~julienxx/castor
-Source: https://git.sr.ht/~julienxx/castor/archive/%{version}.tar.gz
+Source: https://git.sr.ht/~julienxx/castor/archive/master.tar.gz
 
 BuildRequires: gcc
 BuildRequires: rust

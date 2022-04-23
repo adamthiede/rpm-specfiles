@@ -37,7 +37,7 @@ go mod tidy
 go build
 
 %install
-install -Dm755 superhighway84 %{buildroot}%{_bindir}
+install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/superhighway84

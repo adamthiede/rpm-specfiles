@@ -1,6 +1,6 @@
 Summary: terraform
 Name: terraform
-Version: 1.1.8
+Version: 1.1.9
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/hashicorp/terraform
@@ -48,6 +48,8 @@ cp terraform %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
+* Fri Apr 22 2022 Adam Thiede <adamj@mailbox.org> 1.1.9
+- v1.1.9
 * Wed Apr 3 2022 Adam Thiede <adamj@mailbox.org> 1.1.8
 - v1.1.8
 * Wed Jan 19 2022 Adam Thiede <adamj@mailbox.org> 1.1.4
