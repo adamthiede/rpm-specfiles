@@ -1,5 +1,5 @@
 %define name AlephOne
-%define version 20190331
+%define version 20220115
 %define release 1
 
 Summary: 3D first-person shooter game
@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 License: GPL
 Group: Amusements/Games
-Source: %{name}-%{version}.tar.gz
+Source: %{name}-%{version}.tar.bz2
 URL: http://alephone.cebix.net
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # not relocatable because the data file packages depend upon the location
@@ -35,16 +35,13 @@ alephone "~/Marathon Infinity"
 %setup -q
 
 %build
-./autogen.sh
 %configure
-make
+%make_build
 
 %install
-rm -rf ${RPM_BUILD_ROOT}
-%makeinstall
+%make_install
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
