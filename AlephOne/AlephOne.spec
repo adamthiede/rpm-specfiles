@@ -8,14 +8,16 @@ Version: %{version}
 Release: %{release}
 License: GPL
 Group: Amusements/Games
-Source: %{name}-%{version}.tar.bz2
-URL: http://alephone.cebix.net
+URL: https://github.com/Aleph-One-Marathon/alephone
+Source: https://github.com/Aleph-One-Marathon/alephone/releases/download/release-%{version}/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # not relocatable because the data file packages depend upon the location
 # of the data files in this package
 
 Requires: SDL >= 1.2.0 SDL_image >= 1.2.0 SDL_net 
 BuildRequires: make autoconf automake boost-devel curl-devel expat-devel  gcc-c++ libpng-devel SDL2-devel SDL2_ttf-devel SDL2_image-devel SDL2_net-devel SDL2_mixer-devel speex-devel speexdsp-devel zziplib-devel libsndfile-devel libvorbis-devel
+
+%global __brp_mangle_shebangs %{nil}
 
 %description
 Aleph One is an Open Source 3D first-person shooter game, based on the game
