@@ -10,6 +10,27 @@ BuildRequires: bash
 BuildRequires: make
 
 Requires: bash
+Requires: coreutils
+Requires: edk2-ovmf
+Requires: genisoimage
+Requires: grep
+Requires: jq
+Requires: procps-ng
+Requires: python3
+Requires: qemu
+Requires: qemu-ui-gtk
+Requires: qemu-ui-sdl
+Requires: qemu-ui-spice-core
+Requires: sed
+Requires: spice-gtk3
+Requires: spice-server
+Requires: swtpm
+Requires: unzip
+Requires: usbutils
+Requires: util-linux
+Requires: wget
+Requires: xdg-user-dirs
+Requires: xrandr
 
 %global __brp_mangle_shebangs %{nil}
 

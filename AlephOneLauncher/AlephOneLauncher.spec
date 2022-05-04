@@ -1,6 +1,6 @@
 %define name alephone-marathon-launcher
-%define version 1.1
-%define release 2
+%define version 1.2
+%define release 1
 
 Summary: Launcher for AlephOne
 Name: %{name}
@@ -8,8 +8,9 @@ Version: %{version}
 Release: %{release}
 License: GPL
 Group: Amusements/Games
-Source: %{name}-%{version}.tar.gz
-URL: http://alephone.cebix.net
+URL: https://gitlab.com/elagost/alephone-marathon-launcher/
+Source: %{url}/-/archive/%{version}/%{name}-%{version}.tar.gz
+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # not relocatable because the data file packages depend upon the location
 # of the data files in this package
