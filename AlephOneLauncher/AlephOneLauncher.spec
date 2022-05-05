@@ -1,7 +1,6 @@
 %define name alephone-marathon-launcher
 %define version 1.3a
 %define release 1
-
 Summary: Launcher for AlephOne
 Name: %{name}
 Version: %{version}
@@ -10,10 +9,6 @@ License: GPL
 Group: Amusements/Games
 URL: https://gitlab.com/elagost/alephone-marathon-launcher/
 Source: %{url}/-/archive/%{version}/%{name}-%{version}.tar.gz
-
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-# not relocatable because the data file packages depend upon the location
-# of the data files in this package
 
 Requires: gtk3
 Recommends: alephone
@@ -34,29 +29,33 @@ to alephone. For example:
 alephone "~/Marathon Infinity"
 
 %global debug_package %{nil}
+%global __brp_mangle_shebangs %{nil}
 
 %prep
 %setup -q
 
 %build
-make
+%make_build
 
 %install
-rm -rf ${RPM_BUILD_ROOT}
-DESTDIR=${RPM_BUILD_ROOT} make packaging
+#%make_install
+PREFIX=%{buildroot}%{_prefix} make install
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING INSTALL.Unix README docs/MML.html docs/Lua.html
+%doc README.md
 %{_bindir}/marathon-launcher
 %{_bindir}/marathon-installer.sh
 %{_datadir}/applications/marathon-launcher.desktop
 %{_datadir}/icons/hicolor/128x128/apps/marathon_128.png
+%{_datadir}/icons/marathon_128.png
 
 
 %changelog
-* Thu Jul 09 2020 Elagost <me@elagost.com>
+* Wed May 04 2022 Elagost <adamj@mailbox.org>
+- Update to get it a lot cleaner and actually working
+
+* Thu Jul 09 2020 Elagost <adamj@mailbox.org>
 - Initial release
