@@ -49,6 +49,8 @@ PREFIX=%{buildroot}%{_prefix} make install
 %{_bindir}/marathon-launcher
 %{_bindir}/marathon-installer.sh
 %{_datadir}/applications/marathon-launcher.desktop
+#%{_datadir}/icons/hicolor/128x128/apps/marathon_128.png
+#%{_datadir}/icons/marathon_128.png
 %{_datadir}/icons/hicolor/128x128/apps/alephone.png
 %{_datadir}/icons/alephone.png
 
