@@ -10,8 +10,8 @@ Group: Amusements/Games
 URL: https://gitlab.com/elagost/alephone-marathon-launcher/
 Source: %{url}/-/archive/%{version}/%{name}-%{version}.tar.gz
 
-Requires: gtk3
-Recommends: alephone
+Requires: gtk3 wget unzip bash
+Recommends: AlephOne
 BuildRequires: make gtk3-devel vala
 
 %description
