@@ -43,7 +43,7 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/gomuks
-%{_docdir}/%{name}/README.md
+#%{_docdir}/%{name}/README.md
 %doc README.md
 %license LICENSE
 
