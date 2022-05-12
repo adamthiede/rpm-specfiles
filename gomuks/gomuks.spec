@@ -34,7 +34,7 @@ A terminal Matrix client written in Go using mautrix and mauview
 %setup -q
 
 %build
-sed -i go.mod -e 's/^go 1.17/go 1.16/'
+#sed -i go.mod -e 's/^go 1.17/go 1.16/'
 go mod tidy
 go build
 
@@ -43,7 +43,7 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/gomuks
-%{_docdir}%{name}/README.md
+%{_docdir}/%{name}/README.md
 %doc README.md
 %license LICENSE
 
