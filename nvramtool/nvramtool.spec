@@ -11,8 +11,6 @@ BuildRequires: gcc
 BuildRequires: libusb-devel 
 BuildRequires: pciutils-devel
 
-#%global debug_package %{nil}
-
 %description
 nvramtool manipulates nvram from userspace.
 
