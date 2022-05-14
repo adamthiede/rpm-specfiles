@@ -19,11 +19,11 @@ nvramtool manipulates nvram from userspace.
 %prep
 
 cd coreboot-%{version}/util/nvramtool
-DESTDIR=%{buildroot} PREFIX=%{_prefix} make install
+DESTDIR=%{buildroot} PREFIX=%{_prefix} make
+install -Dm755 nvramtool %{buildroot}/%{_bindir}/nvramtool
 
 %files
-/usr/local/sbin/%{name}
-/usr/local/share/man/man8/%{name}.8
+%{_bindir}/%{name}
 
 %changelog
 * Sat May 14 2022 Adam Thiede <adamj@mailbox.org> 4.16
