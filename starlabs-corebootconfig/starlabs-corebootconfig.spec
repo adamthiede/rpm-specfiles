@@ -30,14 +30,18 @@ A simple GUI to change settings in coreboot's CBFS, via the nvramtool utility.
 %setup -q
 
 %build
-%meson_build
+meson build
 
 %install
-%meson_install
+%ninja_install -C build
 #ninja -C build install
 
 %files
 %{_bindir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/*/apps/%{name}.png
+%{_datadir}/polkit-1/actions/org.coreboot.nvramtool.policy
+%{_datadir}/polkit-1/actions/org.coreboot.reboot.policy
 %doc README.md
 %license LICENSE
 
