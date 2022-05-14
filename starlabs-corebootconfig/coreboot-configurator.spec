@@ -30,7 +30,7 @@ BuildRequires: qt5-qtbase-gui
 BuildRequires: ninja
 BuildRequires: libqt5-qtbase-devel
 BuildRequires: libqt5-qtsvg-devel
-BuildRequires: libqt5-qtbase-gui
+BuildRequires: libqt5-qtbase
 %endif
 
 %if 0%{?rhel}
