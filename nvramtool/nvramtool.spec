@@ -8,8 +8,8 @@ Source: https://coreboot.org/releases/coreboot-%{version}.tar.xz
 
 BuildRequires: make
 BuildRequires: gcc
-BuildRequires: libusb-devel 
-BuildRequires: pciutils-devel
+#BuildRequires: libusb-devel
+#BuildRequires: pciutils-devel
 
 %description
 nvramtool manipulates nvram from userspace.
