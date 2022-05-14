@@ -18,7 +18,7 @@ BuildRequires: qt5-qtsvg-devel
 BuildRequires: qt5-qtbase-gui
 BuildRequires: yaml-cpp-devel
 # yes, really
-BuildRequires: inkscape
+#BuildRequires: inkscape
 Requires: qt5-qtbase-gui
 
 #%global debug_package %{nil}
@@ -30,10 +30,11 @@ A simple GUI to change settings in coreboot's CBFS, via the nvramtool utility.
 %setup -q
 
 %build
-meson build
+%meson_build
 
 %install
-ninja -C build install
+%meson_install
+#ninja -C build install
 
 %files
 %{_bindir}/%{name}
