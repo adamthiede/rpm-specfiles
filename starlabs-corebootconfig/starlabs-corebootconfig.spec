@@ -18,7 +18,7 @@ BuildRequires: qt5-qtsvg-devel
 BuildRequires: qt5-qtbase-gui
 BuildRequires: yaml-cpp-devel
 # yes, really
-#BuildRequires: inkscape
+BuildRequires: inkscape
 Requires: qt5-qtbase-gui
 
 #%global debug_package %{nil}
