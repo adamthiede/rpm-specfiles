@@ -1,6 +1,6 @@
 Summary: terraform
 Name: terraform
-Version: 1.1.9
+Version: 1.2.0
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/hashicorp/terraform
@@ -32,9 +32,9 @@ Automate your infrastructure
 %setup -q
 
 %build
-sed -i -e 's,go 1.17,go 1.16,' go.mod
+#sed -i -e 's,go 1.17,go 1.16,' go.mod
 #sed -i -e 's,go-tfe v0.19.1-.*$,go-tfe v0.22.0,' go.mod
-sed -i -e '/sigs.k8s.io\/json/d' go.mod
+#sed -i -e '/sigs.k8s.io\/json/d' go.mod
 #go mod download github.com/hashicorp/go-tfe
 %make_build PREFIX=%{_prefix}
 
@@ -49,6 +49,8 @@ cp terraform %{buildroot}%{_bindir}
 %license LICENSE
 
 %changelog
+* Fri May 20 2022 Adam Thiede <adamj@mailbox.org> 1.2.0
+- v1.2.0
 * Fri Apr 22 2022 Adam Thiede <adamj@mailbox.org> 1.1.9
 - v1.1.9
 * Sun Apr 3 2022 Adam Thiede <adamj@mailbox.org> 1.1.8
