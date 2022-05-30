@@ -3,7 +3,7 @@ Name: gomuks
 Version: master
 Release: 2%{?dist}
 License: AGPLv3
-URL: https://github.com/tuli/gomuks
+URL: https://github.com/tulir/gomuks
 Source: https://github.com/tulir/gomuks/archive/master.tar.gz
 
 BuildRequires: make
