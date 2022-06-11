@@ -30,7 +30,6 @@ mkdir -p %{buildroot}%{_bindir}
 %{_bindir}/btop
 %{_datadir}/btop/*
 %{_datadir}/applications/btop.desktop
-%{_datadir}/applications/btop.desktop
 %{_datadir}/icons/hicolor/*/apps/btop.png
 %doc README.md
 %license LICENSE
