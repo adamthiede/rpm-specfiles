@@ -29,11 +29,17 @@ mkdir -p %{buildroot}%{_bindir}
 %files
 %{_bindir}/btop
 %{_datadir}/btop/*
-%{_datadir}/btop/*/*
+%{_datadir}/applications/btop.desktop
+%{_datadir}/applications/btop.desktop
+%{_datadir}/icons/hicolor/*/apps/btop.png
 %doc README.md
 %license LICENSE
 
 %changelog
+* Sat Jun 11 2022 Adam Tyiede <adamj@mailbox.org> 1.2.7
+- Update btop to version 1.2.7
+- add more files
+
 * Sat Nov 27 2021 Adam Tyiede <adamj@mailbox.org> 1.1.2
 - Update btop to version 1.1.2
 
