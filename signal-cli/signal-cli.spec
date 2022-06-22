@@ -6,10 +6,11 @@ License: GPL
 URL: https://github.com/AsamK/signal-cli
 Source: https://github.com/AsamK/signal-cli/archive/v%{version}.tar.gz
 
-BuildRequires: java-11-openjdk-devel
-Requires: java-11-openjdk
+BuildRequires: java-17-openjdk-devel
+Requires: java-17-openjdk
 
 %global debug_package %{nil}
+%global __brp_mangle_shebangs %{nil}
 
 %description
 
@@ -21,6 +22,7 @@ PREFIX=%{buildroot}%{_prefix} ./gradlew build
 
 %install
 PREFIX=%{buildroot}%{_prefix} ./gradlew installDist
+sed -i -e 's,/lib/,/lib64/,g' build/install/signal-cli/bin/signal-cli
 install -D build/install/signal-cli/bin/signal-cli %{buildroot}%{_bindir}/signal-cli
 mkdir -p %{buildroot}%{_libdir}
 cp build/install/signal-cli/lib/* %{buildroot}%{_libdir}/
