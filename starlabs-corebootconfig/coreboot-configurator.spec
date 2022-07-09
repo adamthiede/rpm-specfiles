@@ -1,6 +1,6 @@
 Summary: A simple GUI to change settings in coreboot's CBFS, via the nvramtool utility.
 Name: coreboot-configurator
-Version: 8
+Version: 9
 Release: 1%{?dist}
 License: GPLv2
 URL: https://github.com/StarLabsLtd/coreboot-configurator
@@ -65,5 +65,8 @@ meson build
 %license LICENSE
 
 %changelog
+* Sat Jul 09 2022 Adam Thiede <adamj@mailbox.org> 9
+- version 9 update
+
 * Sat May 14 2022 Adam Thiede <adamj@mailbox.org> 8
 - initial spec files
