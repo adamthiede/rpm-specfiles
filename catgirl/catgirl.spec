@@ -30,7 +30,7 @@ TLS-only terminal IRC client
 
 %files
 %{_bindir}/%{name}
-%{_docdir}/man/man1/%{name}.1.gz
+%{_datadir}/man/man1/%{name}.1.gz
 %doc README.7
 %license LICENSE
 
