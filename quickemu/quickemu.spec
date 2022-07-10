@@ -53,6 +53,6 @@ cd docs
 %license LICENSE
 
 %changelog
-* Sun Apr 25 2022 Adam Tyiede <adamj@mailbox.org> 3.15
+* Sun Apr 25 2022 Adam Thiede <adamj@mailbox.org> 3.15
 - created spec file
 
