@@ -1,7 +1,7 @@
 Summary: A terminal based Matrix client written in Go
 Name: gomuks
 Version: master
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: AGPLv3
 URL: https://github.com/tulir/gomuks
 Source: https://github.com/tulir/gomuks/archive/master.tar.gz
@@ -48,6 +48,9 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %license LICENSE
 
 %changelog
+* Tue Jun 7 2022 Elagost <adamj@mailbox.org> - master-4
+- Master 4
+
 * Tue Jun 7 2022 Elagost <adamj@mailbox.org> - master-3
 - Master 3
 
