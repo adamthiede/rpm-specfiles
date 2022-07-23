@@ -1,6 +1,6 @@
 Summary: Youtube CLI
 Name: tube
-Version: 114
+Version: 115
 Release: 1%{?dist}
 License: MIT
 URL: https://www.datagubbe.se/yt
