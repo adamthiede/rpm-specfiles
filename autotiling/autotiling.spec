@@ -7,7 +7,7 @@ License:        GPL
 URL:            https://github.com/nwg-piotr/autotiling
 Source0:        https://github.com/nwg-piotr/autotiling/archive/v%{version}.tar.gz
 
-BuildRequires:  python3 python3-pip python3-i3ipc
+BuildRequires:  python3 python3-setuptools python-setuptools-wheel python3-pip python3-i3ipc
 Requires:       python3 python3-i3ipc
 
 %description
