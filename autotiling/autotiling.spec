@@ -1,6 +1,6 @@
 Name:           autotiling
 Version:        1.6
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Script for sway and i3 to automatically switch the horizontal/vertical window split orientation
 
 License:        GPL
