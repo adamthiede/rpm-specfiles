@@ -1,6 +1,6 @@
 Summary: USENET-inspired, uncensorable, decentralized internet discussion system.}
 Name: superhighway84 
-Version: 0.1.1
+Version: 0.2.2
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/mrusme/superhighway84
