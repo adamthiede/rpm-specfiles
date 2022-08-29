@@ -24,6 +24,7 @@ BuildRequires: golang
 Requires: ncurses-base
 
 %global debug_package %{nil}
+%define _build_id_links none
 
 %description
 Bombadillo is a non-web browser for the terminal.
@@ -31,7 +32,7 @@ Bombadillo supports gopher, gemini, finger, local (a user's file system)
 
 
 %prep
-%setup -q
+%setup -q -n bombadillo
 
 %build
 %make_build %{?_smp_mflags} PREFIX=%{_prefix}
@@ -45,6 +46,8 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 %files
 %{_bindir}/bombadillo
 %{_datadir}/applications/bombadillo.desktop
+%{_mandir}/man1/bombadillo.1.gz
+%{_datadir}/pixmaps/bombadillo-icon.png
 %doc README.md
 %license LICENSE
 
