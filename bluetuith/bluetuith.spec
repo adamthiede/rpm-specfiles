@@ -1,5 +1,5 @@
 Name:           bluetuith
-Version:        0.0.7
+Version:        0.1.0
 Release:        1%{?dist}
 Summary:        TUI-based bluetooth connection manager
 
@@ -36,6 +36,9 @@ install -Dm755 bluetuith %{buildroot}/%{_bindir}/bluetuith
 
 
 %changelog
+* Tue Aug 30 2022 Adam Thiede <adamj@mailbox.org>
+- update to 0.1.0
+
 * Fri Jul 15 2022 Adam Thiede <adamj@mailbox.org>
 - update to 0.0.7
 
