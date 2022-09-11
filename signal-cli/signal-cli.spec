@@ -1,6 +1,6 @@
 Summary: a commandline interface for libsignal-service-java 
 Name: signal-cli 
-Version: 0.10.8
+Version: 0.10.11
 Release: 1%{?dist}
 License: GPL
 URL: https://github.com/AsamK/signal-cli
