@@ -1,6 +1,6 @@
 Summary: a Gemini Project client written in Rust with NCurses
 Name: asuka
-Version: 0.8.3
+Version: 0.8.5
 Release: 1%{?dist}
 License: MIT
 URL: https://git.sr.ht/~julienxx/asuka
@@ -35,5 +35,8 @@ install -D target/release/asuka %{buildroot}/%{_bindir}/asuka
 %license LICENSE
 
 %changelog
+* Sun Sep 25 2022 Adam Thiede <adamj@mailbox.org>
+- 0.8.5
+
 * Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org>
 - Created spec file
