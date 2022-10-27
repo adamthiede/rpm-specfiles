@@ -1,6 +1,6 @@
 Summary: coreboot nvramtool
 Name: nvramtool
-Version: 4.17
+Version: 4.18
 Release: 1%{?dist}
 License: GPLv2
 URL: https://review.coreboot.org/coreboot
@@ -23,6 +23,9 @@ install -Dm755 nvramtool %{buildroot}/%{_sbindir}/nvramtool
 %{_sbindir}/%{name}
 
 %changelog
+* Wed Oct 26 2022  Adam Thiede <adamj@mailbox.org> 4.18
+- version change
+
 * Fri Jun 24 2022  Adam Thiede <adamj@mailbox.org> 4.17
 - version change
 

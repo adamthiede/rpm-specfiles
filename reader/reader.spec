@@ -1,6 +1,6 @@
 Summary: better readability of web pages on the CLI.
 Name: reader
-Version: 0.1.3
+Version: 0.3.0
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/mrusme/reader
@@ -45,5 +45,7 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %license LICENSE
 
 %changelog
+* Wed Apr 13 2022 Adam Thiede <adamj@mailbox.org> 0.3.0
+
 * Wed Apr 13 2022 Adam Thiede <adamj@mailbox.org> 0.1.3
 - genesis
