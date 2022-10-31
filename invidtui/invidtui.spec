@@ -1,5 +1,5 @@
 Name:           invidtui
-Version:        0.2.6
+Version:        0.3.0
 Release:        1%{?dist}
 Summary:        TUI-based invidious client
 
@@ -35,6 +35,9 @@ install -Dm755 invidtui %{buildroot}/%{_bindir}/invidtui
 
 
 %changelog
+* Sun Oct 30 2022 Adam Thiede <adamj@mailbox.org>
+- update to 0.3.0
+
 * Tue Aug 30 2022 Adam Thiede <adamj@mailbox.org>
 - update to 0.1.0
 
