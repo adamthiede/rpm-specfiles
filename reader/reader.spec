@@ -1,6 +1,6 @@
 Summary: better readability of web pages on the CLI.
 Name: reader
-Version: 0.3.0
+Version: 0.4.0
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/mrusme/reader
