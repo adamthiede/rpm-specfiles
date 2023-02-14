@@ -1,6 +1,6 @@
 Summary: azure kubernetes login plugin
 Name: kubelogin
-Version: 0.0.25
+Version: 0.0.26
 Release: 1%{?dist}
 License: MIT
 URL: https://github.com/Azure/kubelogin
