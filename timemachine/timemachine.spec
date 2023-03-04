@@ -18,13 +18,13 @@ Rsync-based OSX-like time machine for Linux, MacOS and BSD for atomic and resuma
 %setup -q
 
 %install
-sed -i Makefile -e 's,/usr/local/,/usr/,g'
-make install
+mkdir -p %{buildroot}%{_bindir}
+install -Dm755 timemachine %{buildroot}%{_bindir}/timemachine
 
 %files
 %{_bindir}/timemachine
 %doc README.md
-%license LICENSE
+%license LICENSE.md
 
 %changelog
 * Sat Mar 04 2023 Adam Thiede <adamj@mailbox.org> 1.3.2

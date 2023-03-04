@@ -1,8 +1,7 @@
 Summary: TUI mastodon client in go
 Name: tut
 Version: 2.0.1
-#Release: 1%{?dist}
-Release: %autorelease
+Release: 1%{?dist}
 License: MIT
 URL: https://github.com/RasmusLindroth/tut
 Source: https://github.com/RasmusLindroth/tut/archive/%{version}.tar.gz
@@ -45,8 +44,6 @@ cp %{name} %{buildroot}%{_bindir}
 %{_bindir}/%{name}
 %doc README.md
 %license LICENSE
-
-%autochangelog
 
 %changelog
 * Tue Jun 06 2022 Adam Thiede <adamj@mailbox.org> 1.0.13
