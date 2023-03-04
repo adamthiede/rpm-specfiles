@@ -1,6 +1,6 @@
 Summary: coreboot nvramtool
 Name: nvramtool
-Version: 4.18
+Version: 4.19
 Release: 1%{?dist}
 License: GPLv2
 URL: https://review.coreboot.org/coreboot
