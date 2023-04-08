@@ -15,7 +15,7 @@ BuildRequires: gcc
 BuildRequires: go
 %endif
 %if 0%{?fedora}
-BuildRequires: golang
+BuildRequires: golang golang-x-tools-goimports golang-github-golangci-lint-1-devel
 %endif
 %if 0%{?rhel}
 BuildRequires: golang
@@ -32,11 +32,7 @@ Automate your infrastructure
 %setup -q
 
 %build
-#sed -i -e 's,go 1.17,go 1.16,' go.mod
-#sed -i -e 's,go-tfe v0.19.1-.*$,go-tfe v0.22.0,' go.mod
-#sed -i -e '/sigs.k8s.io\/json/d' go.mod
-#go mod download github.com/hashicorp/go-tfe
-%make_build PREFIX=%{_prefix}
+#%make_build PREFIX=%{_prefix}
 
 %install
 mkdir -p %{buildroot}%{_bindir}

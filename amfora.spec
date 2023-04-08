@@ -1,17 +1,29 @@
 Summary: a Gemini browser for your terminal
 Name: amfora
-Version: 1.8.0
+Version: 1.9.2
 Release: 1%{?dist}
 License: GPLv3
-URL: https://github.com/makeworld-the-better-one/amfora
-Source: https://github.com/makeworld-the-better-one/amfora/archive/v%{version}.tar.gz
+URL: https://github.com/makew0rld/amfora
+Source: https://github.com/makew0rld/amfora/archive/v%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: git
 BuildRequires: gcc
+# suse package: go
+# fedora/rhel package: golang
+%if 0%{?suse_version}
+BuildRequires: go
+%endif
+%if 0%{?fedora}
 BuildRequires: golang
+%endif
+%if 0%{?rhel}
+BuildRequires: golang
+%endif
 
 Requires: ncurses-base
+
+%global debug_package %{nil}
 
 %description
 Amfora aims to be the best looking Gemini client with the most features...
@@ -21,13 +33,13 @@ all in the terminal.
 %setup -q
 
 %build
-%make_build %{?_smp_mflags} -ldflags=-linkmode=external BUILDER="official-rpm" PREFIX=%{_prefix}
+%make_build %{?_smp_mflags} BUILDER="official-rpm" PREFIX=%{_prefix}
 
-%install
+#%install
 mkdir -p %{buildroot}%{_prefix}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/applications/
-%make_install PREFIX=%{buildroot}%{_prefix}
+%make_install PREFIX=%{_prefix}
 
 %files
 %{_bindir}/amfora
@@ -36,8 +48,8 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 %license LICENSE
 
 %changelog
-* Mon Oct 4 2021 Adam Thiede <adamj@mailbox.org> 1.8.0
-- Copy spec to "amfora_fedora.spec" to comply with Fedora-specific packaging rules
+* Sun Mar 20 2022 Adam Thiede <adamj@mailbox.org> 1.9.2
+- Updated version
 
 * Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org> 1.8.0
 - Updated version and cleaned spec file for upload

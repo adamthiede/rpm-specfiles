@@ -1,10 +1,10 @@
-Summary: azure kubernetes login plugin
-Name: kubelogin
-Version: 0.0.27
+Summary: terragrunt
+Name: terragrunt
+Version: 0.45.0
 Release: 1%{?dist}
 License: MIT
-URL: https://github.com/Azure/kubelogin
-Source: https://github.com/Azure/kubelogin/archive/v%{version}.tar.gz
+URL: https://github.com/gruntwork-io/terragrunt
+Source: https://github.com/gruntwork-io/terragrunt/archive/v%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: git
@@ -26,25 +26,26 @@ Requires: ncurses-base
 %global debug_package %{nil}
 
 %description
-kubelogin for azure
+Automate your infrastructure
 
 %prep
 %setup -q
 
-#%build
-#go mod download github.com/hashicorp/go-tfe
+%build
 #%make_build PREFIX=%{_prefix}
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-go build
-cp %{name} %{buildroot}%{_bindir}
+go clean -modcache
+go mod tidy
+go build -v -o terragrunt -ldflags "-X main.VERSION=v%{version}"
+cp terragrunt %{buildroot}%{_bindir}
 
 %files
-%{_bindir}/%{name}
+%{_bindir}/terragrunt
 %doc README.md
 %license LICENSE
 
 %changelog
-* Tue Nov 22 2022 Adam Thiede <adamj@mailbox.org> 0.0.24
-- Initial RPM
+* Fri 24 Mar 2022 Adam Thiede <adamj@mailbox.org> 0.45.0
+- v0.45.0
