@@ -48,11 +48,11 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 %license LICENSE
 
 %changelog
-* Sun Mar 20 2022 Adam Thiede <adamj@mailbox.org> 1.9.2
+* Sun Mar 20 2022 Adam Thiede <me@adamthiede.com> 1.9.2
 - Updated version
 
-* Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org> 1.8.0
+* Sun Oct 3 2021 Adam Thiede <me@adamthiede.com> 1.8.0
 - Updated version and cleaned spec file for upload
 
-* Sun Nov 29 2020 Adam Thiede <adamj@mailbox.org> 1.6.0
+* Sun Nov 29 2020 Adam Thiede <me@adamthiede.com> 1.6.0
 - Created spec file

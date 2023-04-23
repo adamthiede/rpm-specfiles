@@ -35,6 +35,6 @@ TLS-only terminal IRC client
 %license LICENSE
 
 %changelog
-* Sun Jul 10 2022 Adam Thiede <adamj@mailbox.org> 2.1
+* Sun Jul 10 2022 Adam Thiede <me@adamthiede.com> 2.1
 - 2.1
 - Initial 

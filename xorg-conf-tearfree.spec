@@ -1,5 +1,5 @@
 Name:           xorg-conf-tearfree
-Version:        1.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        Config files for no screen tearing on xorg
 
@@ -37,5 +37,5 @@ EndSection' > %{buildroot}/etc/X11/xorg.conf.d/20-radeon-gpu-tearfree.quirks
 /etc/X11/xorg.conf.d/*
 
 %changelog
-* Fri Apr 07 2023 Adam Thiede <adamj@mailbox.org>
-- 
+* Sun Apr 23 2023 Adam Thiede <me@adamthiede.com>
+- initial file

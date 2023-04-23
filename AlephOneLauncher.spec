@@ -56,8 +56,8 @@ PREFIX=%{buildroot}%{_prefix} make install
 
 
 %changelog
-* Wed May 04 2022 Elagost <adamj@mailbox.org>
+* Wed May 04 2022 Elagost <me@adamthiede.com>
 - Update to get it a lot cleaner and actually working
 
-* Thu Jul 09 2020 Elagost <adamj@mailbox.org>
+* Thu Jul 09 2020 Elagost <me@adamthiede.com>
 - Initial release

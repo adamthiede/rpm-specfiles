@@ -38,17 +38,17 @@ install -Dm755 bluetuith %{buildroot}/%{_bindir}/bluetuith
 
 
 %changelog
-* Thu Oct 27 2022 Adam Thiede <adamj@mailbox.org>
+* Thu Oct 27 2022 Adam Thiede <me@adamthiede.com>
 - update to 0.1.3
 
-* Sun Sep 11 2022 Adam Thiede <adamj@mailbox.org>
+* Sun Sep 11 2022 Adam Thiede <me@adamthiede.com>
 - update to 0.1.2
 
-* Tue Aug 30 2022 Adam Thiede <adamj@mailbox.org>
+* Tue Aug 30 2022 Adam Thiede <me@adamthiede.com>
 - update to 0.1.0
 
-* Fri Jul 15 2022 Adam Thiede <adamj@mailbox.org>
+* Fri Jul 15 2022 Adam Thiede <me@adamthiede.com>
 - update to 0.0.7
 
-* Fri Jul 15 2022 Adam Thiede <adamj@mailbox.org>
+* Fri Jul 15 2022 Adam Thiede <me@adamthiede.com>
 - initial

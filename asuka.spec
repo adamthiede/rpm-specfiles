@@ -35,8 +35,8 @@ install -D target/release/asuka %{buildroot}/%{_bindir}/asuka
 %license LICENSE
 
 %changelog
-* Sun Sep 25 2022 Adam Thiede <adamj@mailbox.org>
+* Sun Sep 25 2022 Adam Thiede <me@adamthiede.com>
 - 0.8.5
 
-* Sun Oct 3 2021 Adam Thiede <adamj@mailbox.org>
+* Sun Oct 3 2021 Adam Thiede <me@adamthiede.com>
 - Created spec file

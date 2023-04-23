@@ -65,8 +65,8 @@ meson build
 %license LICENSE
 
 %changelog
-* Sat Jul 09 2022 Adam Thiede <adamj@mailbox.org> 9
+* Sat Jul 09 2022 Adam Thiede <me@adamthiede.com> 9
 - version 9 update
 
-* Sat May 14 2022 Adam Thiede <adamj@mailbox.org> 8
+* Sat May 14 2022 Adam Thiede <me@adamthiede.com> 8
 - initial spec files

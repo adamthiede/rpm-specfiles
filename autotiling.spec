@@ -33,8 +33,8 @@ Script for sway and i3 to automatically switch the horizontal/vertical window sp
 %{_usr}/lib/python3.11/site-packages/autotiling-%{version}.dist-info/*
 
 %changelog
-* Thu Jan 18 2023 Adam Thiede <adamj@mailbox.org>
+* Thu Jan 18 2023 Adam Thiede <me@adamthiede.com>
 - v1.8
 
-* Thu Aug 11 2022 Adam Thiede <adamj@mailbox.org>
+* Thu Aug 11 2022 Adam Thiede <me@adamthiede.com>
 - initial spec
