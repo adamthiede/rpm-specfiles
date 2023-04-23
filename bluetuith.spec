@@ -22,7 +22,9 @@ bluetuith is a TUI-based bluetooth connection manager, which can interact with b
 
 
 %build
-go build
+go build \
+   -mod=vendor \
+   -buildmode=pie
 
 %install
 install -Dm755 bluetuith %{buildroot}/%{_bindir}/bluetuith

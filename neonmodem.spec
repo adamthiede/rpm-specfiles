@@ -4,7 +4,7 @@ Version: 1.0.2
 Release: 1%{?dist}
 License: GPLv3
 URL: https://github.com/mrusme/neonmodem
-Source: https://github.com/mrusme/neonmodem/archive/v%{version}.tar.gz
+Source: https://github.com/mrusme/neonmodem/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: git
