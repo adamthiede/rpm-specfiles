@@ -36,7 +36,7 @@ jobs:
           set -e
           set +x
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            if [[ "$file" =! .*\.spec ]];then
+            if [[ "$file" =~ .*\.spec ]];then
               copr build adamthiede/bin ${file} -r fedora-38-x86_64
             fi
           done
