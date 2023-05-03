@@ -27,17 +27,16 @@ jobs:
       - name: install copr
         shell: bash
         run: |
-          sudo apt update
-          sudo apt install -qq bash jq python3-pip
           pip install --user copr-cli
       - name: run copr
         shell: bash
         run: |
           set -e
           set +x
+          ~/.local/bin/copr-cli --version
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             if [[ "$file" =~ .*\.spec ]];then
-              copr build adamthiede/bin ${file} -r fedora-38-x86_64
+              ~/.local/bin/copr-cli build adamthiede/bin ${file} -r fedora-38-x86_64
             fi
           done
 
