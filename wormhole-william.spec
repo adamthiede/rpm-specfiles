@@ -3,6 +3,7 @@ Name: wormhole-william
 Version: 1.0.6
 Release: 2%{?dist}
 License: MIT
+
 URL: https://github.com/psanford/wormhole-william
 Source: https://github.com/psanford/wormhole-william/archive/v%{version}.tar.gz
 
