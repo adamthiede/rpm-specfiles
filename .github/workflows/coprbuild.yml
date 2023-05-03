@@ -1,0 +1,43 @@
+---
+name: run copr build
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  invoke-copr-builds:
+    name: invoke copr builds
+    runs-on: ubuntu-latest
+    steps:
+      - name: install copr config
+        shell: bash
+        env:
+          TOKEN: ${{secrets.COPR_CONFIG}}
+        run: |
+          mkdir -p ~/.config
+          echo "$COPR_CONFIG" > ~/.config/copr
+          chmod 600 ~/.config/copr
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: find changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+      - name: install copr
+        shell: bash
+        run: |
+          sudo apt update
+          sudo apt install -qq bash jq python3-pip
+          pip install --user copr-cli
+      - name: run copr
+        shell: bash
+        run: |
+          set -e
+          set +x
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; to
+            if [[ "$file" =! .*\.spec ]];then
+              copr build adamthiede/bin ${file} -r fedora-38-x86_64
+            fi
+          done
+
