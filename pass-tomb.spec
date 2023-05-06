@@ -24,7 +24,7 @@ A pass extension that helps you keep the whole tree of passwords encrypted insid
 %doc README.md
 %{_prefix}/lib/systemd/system/pass-close@.service
 %{_prefix}/lib/password-store/extensions/*
-%{_mandir}/man1/*
+%{_datadir}
 
 %changelog
 * Tue Apr 11 2023 Adam Thiede <adamj@mailbox.org>
