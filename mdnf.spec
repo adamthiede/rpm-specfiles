@@ -1,6 +1,6 @@
 Name:           mdnf-alias
 Version:        1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        microdnf aliases
 
 License:        GPLv3
