@@ -14,7 +14,7 @@ jobs:
       - name: install copr config
         shell: bash
         env:
-          TOKEN: ${{secrets.COPR_CONFIG}}
+          COPR_CONFIG: ${{secrets.COPR_CONFIG}}
         run: |
           mkdir -p ~/.config
           echo "$COPR_CONFIG" > ~/.config/copr

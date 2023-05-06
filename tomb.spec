@@ -8,17 +8,16 @@ URL:            https://github.com/dyne/Tomb/
 Source0:        https://github.com/dyne/Tomb/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  make
-Requires:       sudo cryptsetup pinentry gnupg
+Requires:       sudo cryptsetup pinentry gnupg zsh
 
 %description
 A minimalistic commandline tool to manage encrypted volumes aka The Crypto Undertaker
 
 %prep
-%autosetup
+%setup -n Tomb-%{version}
 
 %install
 %make_install PREFIX=/usr 
-
 
 %files
 %license COPYING
