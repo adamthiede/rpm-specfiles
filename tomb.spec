@@ -20,10 +20,10 @@ A minimalistic commandline tool to manage encrypted volumes aka The Crypto Under
 %make_install PREFIX=/usr 
 
 %files
+%{_bindir}/tomb
+%{_mandir}/man1/tomb.1.gz
 %license COPYING
 %doc README.md
-
-
 
 %changelog
 * Wed May 03 2023 Adam Thiede <me@adamthiede.com>
